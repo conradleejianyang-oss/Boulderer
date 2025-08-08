@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#2c3e50" />
+    <title>Rock Climber</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="homeScreen" class="overlay visible">
+        <div class="overlay-card">
+          <h1 class="title">Rock Climber</h1>
+          <p id="bestScoreText">Best: 0</p>
+          <button id="playButton" class="primary">Play</button>
+          <p class="hint">Tap ◀ ▶ or use ← → keys. Press T to toggle day/night.</p>
+        </div>
+      </div>
+
+      <div id="gameOverScreen" class="overlay">
+        <div class="overlay-card">
+          <h2>Game Over</h2>
+          <p id="finalScoreText">Score: 0</p>
+          <p id="highScoreText">Best: 0</p>
+          <button id="restartButton" class="primary">Restart</button>
+        </div>
+      </div>
+
+      <canvas id="gameCanvas" aria-label="Rock Climber game" role="img"></canvas>
+
+      <div id="controls">
+        <button id="leftBtn" aria-label="Move Left" class="control">◀</button>
+        <button id="rightBtn" aria-label="Move Right" class="control">▶</button>
+      </div>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
